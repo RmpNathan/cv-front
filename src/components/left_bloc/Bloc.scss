@@ -1,0 +1,9 @@
+@import "../../assets/variables";
+.bloc{
+  background: $baseColorDark;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  .icon{
+    border-radius: 50%;
+  }
+}
