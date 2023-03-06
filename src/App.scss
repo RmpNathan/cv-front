@@ -20,19 +20,19 @@ main{
     border: 15px solid $baseColorDark;
   }
   &:before{
-    top: 8px;
-    left: 8px;
+    top: 7px;
+    left: 6px;
     content: "";
     position: absolute;
     height: 194px;
-    width: 50%;
+    width: 53%;
     background: $baseColorDark;
     --mask: radial-gradient(70px at 100% 100%,#0000 98%,#000);
     -webkit-mask: var(--mask);
     mask: var(--mask);
   }
   &:after{
-    top: 5px;
+    top: 3.9px;
     left: 91px;
     content: "";
     position: absolute;
