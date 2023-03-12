@@ -4,7 +4,7 @@ import React from "react";
 
 export default function BlocTitle ({title = ""}) {
   return(
-    <Box className='bloc' w='200px' color='white' padding='5px 10px'>
+    <Box className='bloc' w='250px' color='white' padding='5px 10px'>
       <Flex align='center'>
         <Text>
           {title}

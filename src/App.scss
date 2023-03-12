@@ -45,3 +45,15 @@ main{
     mask: var(--mask);
   }
 }
+
+svg {
+  .cls-1 {
+    stroke: $baseColorGreen;
+    stroke-width: 1px;
+    fill:transparent;
+  }
+  .cls-2 {
+    fill:$baseColorDark;
+  }
+}
+
