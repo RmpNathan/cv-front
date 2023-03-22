@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.scss";
 import {Box, ChakraProvider, Grid, GridItem, Text} from '@chakra-ui/react'
-import {Picture} from './components/Picture'
-import BlocContact from './components/left_bloc/BlocContact'
-import BlocSkills from './components/left_bloc/BlocSkills'
-import Title from "./components/title/Title";
-import TitleSection from "./components/title/titleSection/TitleSection";
+import {Picture} from './components/pictures/roundPicture/Picture'
+import BlocContact from './components/leftBloc/BlocContact/BlocContact'
+import BlocSkills from './components/leftBloc/BlocSkills/BlocSkills'
+import Title from "./components/titles/svgTitle/Title";
+import TitleSection from "./components/titles/titleSection/TitleSection";
 import Formations from "./components/formation/Formations";
 import Experiences from "./components/experience/Experiences";
 export default function App() {
@@ -23,33 +23,32 @@ export default function App() {
               <BlocSkills />
             </Box>
           </GridItem>
+
           <GridItem padding={'0 50px'} colSpan={4}>
-            <Box padding={"50px 0px"}>
-              <Title/>
-            </Box>
-            <Box>
-              <Text>
-                Passionné par le développement web et les nouvelles technologies, j'ai acquis
-                une expérience en tant que développeur full-stack au sein d'entreprises telles
-                que 14eight, ISI.nc et Amplitudes. Mon parcours professionnel m'a permis de
-                travailler sur des projets variés pour des clients de différents secteurs
-                d'activité (Agence digital, ESN, Agence de voyage). Fort de ces expériences,
-                je suis désormais à la recherche de nouveaux défis et d'opportunités pour
-                continuer à élargir mes compétences et contribuer à des projets ambitieux.
-              </Text>
-            </Box>
-            <Box marginTop={'25px'} borderBottom={'2px solid #514C4A'}>
+            <section>
+              <Box padding={"50px 0px"}>
+                <Title/>
+              </Box>
+              <Box>
+                <Text>
+                  Passionné par le développement web et les nouvelles technologies, j'ai acquis
+                  une expérience en tant que développeur full-stack au sein d'entreprises telles
+                  que 14eight, ISI.nc et Amplitudes. Mon parcours professionnel m'a permis de
+                  travailler sur des projets variés pour des clients de différents secteurs
+                  d'activité (Agence digital, ESN, Agence de voyage). Fort de ces expériences,
+                  je suis désormais à la recherche de nouveaux défis et d'opportunités pour
+                  continuer à élargir mes compétences et contribuer à des projets ambitieux.
+                </Text>
+              </Box>
+            </section>
+            <section>
               <TitleSection title={'formations'}/>
-            </Box>
-            <Box marginTop={'40px'}>
               <Formations/>
-            </Box>
-            <Box marginTop={'25px'} borderBottom={'2px solid #514C4A'}>
+            </section>
+            <section>
               <TitleSection title={'experiences'}/>
-            </Box>
-            <Box marginTop={'40px'} display={'inline-block'}>
               <Experiences/>
-            </Box>
+            </section>
           </GridItem>
         </Grid>
       </main>

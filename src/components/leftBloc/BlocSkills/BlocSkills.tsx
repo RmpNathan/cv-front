@@ -1,9 +1,9 @@
 import React from "react";
 import { Box } from '@chakra-ui/react'
-import './Bloc.scss'
-import '../../assets/variables.scss'
-import Rating from '../rating/Rating'
-import BlocTitle from './bloc_components/BlocTitle'
+import '../Bloc.scss'
+import '../../../assets/variables.scss'
+import Rating from './rating/Rating'
+import BlocTitle from '../blocComponents/BlocTitle'
 
 export default function BlocSkills() {
   type Skill = {

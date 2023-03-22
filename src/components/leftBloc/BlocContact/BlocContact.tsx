@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Flex, Spacer, Text, Wrap, WrapItem } from '@chakra-ui/react'
-import './Bloc.scss'
-import '../../assets/variables.scss'
-import TextIcon from './bloc_components/TextIcon'
-import BlocTitle from './bloc_components/BlocTitle'
+import { Box } from '@chakra-ui/react'
+import '../Bloc.scss'
+import '../../../assets/variables.scss'
+import TextIcon from '../blocComponents/TextIcon'
+import BlocTitle from '../blocComponents/BlocTitle'
 
 export default function BlocContact() {
   type Contact = {

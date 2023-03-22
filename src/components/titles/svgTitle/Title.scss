@@ -1,0 +1,16 @@
+@import "../../../assets/variables";
+svg {
+  .cls-1 {
+    stroke: $baseColorGreen;
+    stroke-width: 1px;
+    fill:transparent;
+  }
+  .cls-2 {
+    fill:$baseColorDark;
+  }
+
+  line.cls-3{
+    stroke: $baseColorDark;
+    stroke-width: 2px;
+  }
+}

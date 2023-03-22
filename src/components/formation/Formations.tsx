@@ -17,12 +17,11 @@ export default function Formations() {
             .then((data) => setFormations(data));
     }, []);
     return(
-        <Flex gap={5} flexWrap={'wrap'} className={'container-formation'} alignItems={'stretch'}>
+        <Flex marginTop={'40px'} gap={5} flexWrap={'wrap'} className={'container-formation'} alignItems={'stretch'}>
             {formations.map((formation, index) => {
                 return (
                     <Box key={index} flexBasis={0} flexGrow={1} className={'column'}>
                         <CardCv title={formation.title} description={formation.description} startDate={formation.startDate} endDate={formation.endDate} />
-                        {/*<CardCv title={formation.title} description={formation.description} startDate={formation.startDate} endDate={formation.endDate} />*/}
                     </Box>
                 )
             })}

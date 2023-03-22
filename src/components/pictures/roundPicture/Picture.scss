@@ -1,0 +1,37 @@
+@import "../../../assets/variables";
+.st0{fill: #514C4A;}
+.profile{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px;
+  overflow: visible!important;
+  img {
+    border: 15px solid $baseColorDark;
+  }
+  &:before {
+    top: -3px;
+    left: -2px;
+    content: "";
+    position: absolute;
+    height: 187px;
+    width: 62%;
+    background: #514C4A;
+    --mask: radial-gradient(54px at 100% 100%,#0000 98%,#000);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+  &:after{
+    top: 24.9px;
+    left: 88px;
+    content: "";
+    position: absolute;
+    height: 66px;
+    width: 74%;
+    z-index: -13;
+    background: #514C4A;
+    --mask: radial-gradient(61px at 100% 100%,#0000 98%,#000);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+}

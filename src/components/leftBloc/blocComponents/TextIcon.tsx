@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Flex, Spacer, Text } from '@chakra-ui/react'
+import { Box, Flex, Text } from '@chakra-ui/react'
 import { Icon } from '@chakra-ui/icons'
 import { MdSettings } from 'react-icons/md'
 
-export default function TextIcon({ title = 'default title' }) {
+export default function TextIcon({ title = 'default titles' }) {
   return(
     <Box color='white' padding='5px 10px 10px 0'>
       <Flex align='center'>

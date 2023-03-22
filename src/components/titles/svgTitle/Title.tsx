@@ -1,22 +1,9 @@
-import { Box, Flex, Spacer, Text } from '@chakra-ui/react'
-import { Icon } from '@chakra-ui/icons'
+import { Box } from '@chakra-ui/react'
 import React, {useEffect} from 'react'
 import anime from 'animejs/lib/anime.es.js';
+import './Title.scss'
 export default function Title () {
     useEffect(() => {
-        // const runAnim2 = () => {
-        //     anime({
-        //         targets: '#calque .cls-1',
-        //         fill: '#99CFB5',
-        //         duration: 1000,
-        //         direction: 'alternate',
-        //         easing: 'easeInOutSine',
-        //         loop: false,
-        //         complete: () => {
-        //             console.log('show the rest of the webpage')
-        //         }
-        //     });
-        // }
         const runAnimation = () => {
             anime({
                 targets: '#calque .cls-1',
@@ -25,8 +12,7 @@ export default function Title () {
                 easing: 'linear',
                 loop: false,
                 complete: function () {
-                    console.log("toto")
-                    // runAnim2()
+                    console.log("finish")
                 }
             });
         };

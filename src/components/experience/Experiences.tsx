@@ -17,26 +17,25 @@ export default function Experiences() {
             .then((data) => setExperiences(data));
     }, []);
     return(
-        <Box textAlign={'center'}>
+        <Box marginTop={'40px'} display={'inline-block'} textAlign={'center'}>
             {experiences.map((experience, index) => {
-                if (index === 1 || index ==2) {
+                if (index === 1 || index === 2) {
                     return (
                         <span key={index}>
-                        <CardCv classTimeline={index === 1 ? "impair trait-bas" : "pair trait-bas"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
-                    </span>
+                            <CardCv classTimeline={index === 1 ? "impair trait-bas" : "pair trait-bas"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
+                        </span>
                     )
                 }
-                if (index % 2 !== 0 || index == experiences.length) {
+                if (index % 2 !== 0 || index === experiences.length) {
                     return (
-                    <span key={index}>
-                        <CardCv classTimeline={"impair"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
-                    </span>
+                        <span key={index}>
+                            <CardCv classTimeline={"impair"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
+                        </span>
                     )
                 }
                 return (
                     <span key={index}>
                         <CardCv classTimeline={"pair"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
-                        {/*<svg className={'line'} width="200px" ><line x1="200px" y1="0" x2="0" y2="0"/></svg>*/}
                     </span>
                 )
             })}
