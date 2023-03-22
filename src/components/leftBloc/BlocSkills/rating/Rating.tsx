@@ -31,7 +31,7 @@ export default function Rating({ title = "", rate = 0, category = "" }){
         translateX: 250
     });
   return (
-    <Box width='200px'>
+    <Box marginBottom={'3px'} marginLeft="10px" width='200px'>
       <Flex align='center'>
         <Text color='#000'>
           {title}

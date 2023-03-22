@@ -1,7 +1,7 @@
 import React from "react";
 import {Box, Flex} from '@chakra-ui/react'
 import '../../assets/variables.scss'
-import CardCv from "../card/CardCv";
+import CardFormation from "./card/CardFormation";
 
 export default function Formations() {
     type Formation = {
@@ -17,11 +17,11 @@ export default function Formations() {
             .then((data) => setFormations(data));
     }, []);
     return(
-        <Flex marginTop={'40px'} gap={5} flexWrap={'wrap'} className={'container-formation'} alignItems={'stretch'}>
+        <Flex marginTop={'40px'} gap={30} flexWrap={'wrap'} className={'container-formation'} alignItems={'stretch'}>
             {formations.map((formation, index) => {
                 return (
-                    <Box key={index} flexBasis={0} flexGrow={1} className={'column'}>
-                        <CardCv title={formation.title} description={formation.description} startDate={formation.startDate} endDate={formation.endDate} />
+                    <Box flexBasis={0} flexGrow={1} className={'column'}>
+                        <CardFormation key={index} title={formation.title} description={formation.description} startDate={formation.startDate} endDate={formation.endDate} />
                     </Box>
                 )
             })}

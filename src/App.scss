@@ -19,3 +19,10 @@ main{
   border-left: 50px solid $baseColorDark;
   min-height: calc(100vh);
 }
+h1,h2,h3,h4,h5,h6,.gotham-bold{
+  font-family: 'GothamBold';
+}
+p,.gotham-book{
+  font-family: 'GothamBook';
+  font-size: 16px;
+}

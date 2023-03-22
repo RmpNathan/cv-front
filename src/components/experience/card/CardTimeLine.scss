@@ -1,8 +1,15 @@
-@import "../../assets/variables";
+@import "../../../assets/variables";
+
 .card-timeline{
   display: inline-block!important;
   width: 40%;
   max-width: 415px;
+  p{
+    font-size: 16px;
+  }
+  .date{
+    font-size: 15px;
+  }
 }
 .pair{
   margin-right: 200px;

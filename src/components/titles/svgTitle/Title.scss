@@ -1,9 +1,13 @@
 @import "../../../assets/variables";
 svg {
+  // for border animation with animejs but i will try later with gsap
+  //.cls-1 {
+  //  stroke: $baseColorGreen;
+  //  stroke-width: 1px;
+  //  fill:transparent;
+  //}
   .cls-1 {
-    stroke: $baseColorGreen;
-    stroke-width: 1px;
-    fill:transparent;
+    fill:$baseColorGreen;
   }
   .cls-2 {
     fill:$baseColorDark;

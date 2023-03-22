@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from '@chakra-ui/react'
+import {Box, Heading} from '@chakra-ui/react'
 import '../Bloc.scss'
 import '../../../assets/variables.scss'
 import Rating from './rating/Rating'
@@ -17,25 +17,19 @@ export default function BlocSkills() {
     .then((res) => res.json())
     .then((data) => setSkills(data));
   }, []);
-  return(
-    <Box w='100%'>
-      <BlocTitle title='Competences' />
-      {skills.map((skill, index) => {
-        if (index === 0 || skill.categorie !== skills[index-1].categorie) {
-          return (
-              <Box key={index} marginLeft="10px">
-                <Box color="#99CFB5" fontSize="22px">{skill.categorie}</Box>
-                <Rating title={skill.title} rate={skill.rate}/>
-              </Box>
-          )
-        } else {
-          return (
-              <Box key={index} marginLeft="10px">
-                <Rating title={skill.title} rate={skill.rate}/>
-              </Box>
-          )
-        }
-      })}
-    </Box>
-  )
+  return (
+      <Box w="100%">
+        <BlocTitle title="Competences" />
+        {skills.map((skill, index) => (
+            <Box>
+              {index === 0 || skills[index].categorie !== skills[index - 1].categorie ? (
+                  <Heading marginBottom={'5px'} marginLeft={'5px'} as={'h2'} color="#99CFB5" fontSize="22px">
+                    {skill.categorie}
+                  </Heading>
+              ) : null}
+              <Rating key={index} title={skill.title} rate={skill.rate} />
+            </Box>
+        ))}
+      </Box>
+  );
 }

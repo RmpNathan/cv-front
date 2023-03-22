@@ -1,7 +1,7 @@
 import React from "react";
 import {Box} from '@chakra-ui/react'
 import '../../assets/variables.scss'
-import CardCv from "../card/CardCv";
+import CardTimeLine from "./card/CardTimeLine";
 
 export default function Experiences() {
     type Experience = {
@@ -22,20 +22,20 @@ export default function Experiences() {
                 if (index === 1 || index === 2) {
                     return (
                         <span key={index}>
-                            <CardCv classTimeline={index === 1 ? "impair trait-bas" : "pair trait-bas"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
+                            <CardTimeLine classTimeline={index === 1 ? "impair trait-bas" : "pair trait-bas"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
                         </span>
                     )
                 }
                 if (index % 2 !== 0 || index === experiences.length) {
                     return (
                         <span key={index}>
-                            <CardCv classTimeline={"impair"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
+                            <CardTimeLine classTimeline={"impair"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
                         </span>
                     )
                 }
                 return (
                     <span key={index}>
-                        <CardCv classTimeline={"pair"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
+                        <CardTimeLine classTimeline={"pair"} darkMode={true} title={experience.title} description={experience.description} startDate={experience.startDate} endDate={experience.endDate} timeline={true} />
                     </span>
                 )
             })}

@@ -3,21 +3,21 @@ import React, {useEffect} from 'react'
 import anime from 'animejs/lib/anime.es.js';
 import './Title.scss'
 export default function Title () {
-    useEffect(() => {
-        const runAnimation = () => {
-            anime({
-                targets: '#calque .cls-1',
-                strokeDashoffset: [anime.setDashoffset, 0],
-                duration: 2000,
-                easing: 'linear',
-                loop: false,
-                complete: function () {
-                    console.log("finish")
-                }
-            });
-        };
-        runAnimation();
-    }, []);
+    // useEffect(() => {
+    //     const runAnimation = () => {
+    //         anime({
+    //             targets: '#calque .cls-1',
+    //             strokeDashoffset: [anime.setDashoffset, 0],
+    //             duration: 2000,
+    //             easing: 'linear',
+    //             loop: false,
+    //             complete: function () {
+    //                 console.log("finish")
+    //             }
+    //         });
+    //     };
+    //     runAnimation();
+    // }, []);
     return (
         <Box maxWidth={'800px'} margin={'0 auto'} textAlign={"center"}>
             <svg id="calque" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.75 67.17">

@@ -18,7 +18,7 @@ export default function App() {
         >
           <GridItem rowSpan={2} colSpan={1}>
             <Picture />
-            <Box marginTop="200px">
+            <Box marginTop="135px">
               <BlocContact />
               <BlocSkills />
             </Box>

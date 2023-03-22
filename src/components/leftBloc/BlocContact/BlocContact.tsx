@@ -3,7 +3,6 @@ import { Box } from '@chakra-ui/react'
 import '../Bloc.scss'
 import '../../../assets/variables.scss'
 import TextIcon from '../blocComponents/TextIcon'
-import BlocTitle from '../blocComponents/BlocTitle'
 
 export default function BlocContact() {
   type Contact = {
@@ -18,7 +17,6 @@ export default function BlocContact() {
   }, []);
   return(
     <Box w='100%'>
-      <BlocTitle title='Contacte'></BlocTitle>
       {contacts.map((contact: Contact, index) => {
         return <TextIcon key={index} title={contact.title}/>
       })}
