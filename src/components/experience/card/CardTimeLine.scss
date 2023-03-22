@@ -2,8 +2,6 @@
 
 .card-timeline{
   display: inline-block!important;
-  width: 40%;
-  max-width: 415px;
   p{
     font-size: 16px;
   }
@@ -11,15 +9,19 @@
     font-size: 15px;
   }
 }
+.impair{
+  max-width: 30%;
+}
 .pair{
-  margin-right: 200px;
+  max-width: 33.33%;
+  margin-right: 33.33%;
   &:before{
     content: "";
-    width: 200px;
+    width: 100%;
     background: #514C4A;
     height: 29px;
     position: absolute;
-    right: -200px;
+    right: -100%;
     top: 50%;
   }
 }
@@ -29,55 +31,21 @@
     content: "";
     width: 29px;
     background: #514C4A;
-    height: 175px;
+    height: 100%;
     position: absolute;
     right: 50%;
     top: 100%;
   }
 }
 .pair.trait-bas{
-  margin-bottom: 150px;
-  margin-right: 200px;
-  &:before{
-    content: "";
-    width: 29px;
-    background: #514C4A;
-    height: 150px;
-    position: absolute;
-    right: 50%;
-    top: 100%;
-  }
   &:after{
     content: "";
-    width: 200px;
+    width: 100%;
     background: #514C4A;
     height: 29px;
     position: absolute;
-    right: -200px;
+    right: -100%;
     top: 50%;
-  }
-}
-
-@media screen and (max-width: 1430px) {
-  .card-timeline{
-    max-width: 300px;
-  }
-  .trait-bas, .pair.trait-bas {
-    margin-bottom: 72px;
-  }
-}
-@media screen and (max-width: 1215px) {
-  .card-timeline{
-    max-width: 280px;
-  }
-  .trait-bas {
-    margin-bottom: 72px;
-  }
-  .pair.trait-bas {
-    margin-right: 120px;
-  }
-  .pair {
-    margin-right: 120px;
   }
 }
 
